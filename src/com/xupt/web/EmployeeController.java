@@ -23,6 +23,15 @@ public class EmployeeController {
 	@Resource
 	private EmployeeService employeeService;
 
+	@RequestMapping(params = "method=photo")
+	public String photo() {
+		System.out.println("EmployeeController.photo()");
+		
+		return "/WEB-INF/views/PhotoView.jsp";
+
+	}
+	
+	
 	@RequestMapping(params = "method=find")
 	public String find(Model model, int id) {
 		System.out.println("EmployeeController.find()");

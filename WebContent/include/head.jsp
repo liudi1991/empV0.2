@@ -23,8 +23,7 @@
                 	<a class="lista_first" href="emp.do?method=findAll">员工浏览</a>
                     <a href="emp.do?method=presave">添加员工</a>
                     <a href="emp.do?method=prefind">查找员工</a>
-                    <a href="emp.do?method=premodify">修改员工</a>
-                    <a href="list.do">删除员工</a>
+                  
                 </div>
             </li>
             <li>
@@ -39,7 +38,7 @@
            <li>
             	<a class="a_list a_list2">员工风采</a>
                 <div class="menu_list">
-                	<a href="photo.do">员工相册</a>
+                	<a href="emp.do?method=photo">员工相册</a>
                     <a href="#">#</a>
                     <a href="#">#</a>
                     <a href="#">##</a>
@@ -57,8 +56,7 @@
                 	<a class="j_lista_first" href="emp.do?method=findAll">员工浏览</a>
                     <a href="emp.do?method=presave">添加员工</a>
                     <a href="emp.do?method=prefind">查找员工</a>
-                    <a href="list.do">修改员工</a>
-                    <a href="list.do">删除员工</a>
+                    
                 </div>
             </li>
             <li>
@@ -75,7 +73,7 @@
             	<a class="j_a_list j_a_list2"></a>
                 <div class="j_menu_list">
                 <span class="sp2"><i></i>员工风采</span>
-                	<a href="photo.do">员工相册</a>
+                	<a href="emp.do?method=photo">员工相册</a>
                     <a href="#">#</a>
                     <a href="#">#</a>
                     <a href="#">##</a>

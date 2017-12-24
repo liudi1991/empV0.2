@@ -36,7 +36,7 @@
 								<div class="form-group">
 									<label class="control-label"></label>
 									<button type="submit" class="btn btn-primary">≤È’“</button>
-									<a href="list.do"> <input class="btn btn-primary"
+									<a href="emp.do?method=findAll"> <input class="btn btn-primary"
 										type="button" class="button" value="∑µªÿ" />
 									</a>
 								</div>

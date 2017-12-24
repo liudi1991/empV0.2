@@ -43,7 +43,7 @@
 				
 			</div>
 			
-			<a href="home.do"> <input class="btn btn-primary"
+			<a href="emp.do?method=findAll"> <input class="btn btn-primary"
 									type="button" class="button" value="·µ»Ø" />
 								</a>
 			
