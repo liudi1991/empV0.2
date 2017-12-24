@@ -22,7 +22,7 @@
                 <div class="menu_list menu_list_first">
                 	<a class="lista_first" href="emp.do?method=findAll">员工浏览</a>
                     <a href="emp.do?method=presave">添加员工</a>
-                    <a href="search.do">查找员工</a>
+                    <a href="emp.do?method=prefind">查找员工</a>
                     <a href="emp.do?method=premodify">修改员工</a>
                     <a href="list.do">删除员工</a>
                 </div>
@@ -56,7 +56,7 @@
                 	<span class="sp1"><i></i>员工设置</span>
                 	<a class="j_lista_first" href="emp.do?method=findAll">员工浏览</a>
                     <a href="emp.do?method=presave">添加员工</a>
-                    <a href="search.do">查找员工</a>
+                    <a href="emp.do?method=prefind">查找员工</a>
                     <a href="list.do">修改员工</a>
                     <a href="list.do">删除员工</a>
                 </div>

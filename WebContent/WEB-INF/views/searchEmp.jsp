@@ -25,7 +25,7 @@
 				
 				<h1>≤È’“‘±π§</h1>
 				<table>
-					<form id="add_from" action="search.do" method="post">
+					<form id="add_from" action="emp.do?method=find" method="post">
 						<div class="form-group">
 							<label class="control-label">ID</label>
 							<div class="controls">

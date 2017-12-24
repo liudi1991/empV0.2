@@ -49,10 +49,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Override
 	public Employee findById(int id) throws SQLException {
 		// TODO Auto-generated method stub
+		Employee e=null;
 		System.out.println("EmployeeDAOImpl.findById()");
-		Employee e=(Employee) hibernateTemplate.find("from Employee where id=?", id).get(0);
-		System.out.println(e.getName());
-		System.out.println(e.getId());
+		if(hibernateTemplate.find("from Employee where id=?", id).size()!=0){
+			e=(Employee) hibernateTemplate.find("from Employee where id=?", id).get(0);
+			//System.out.println(e.getName());
+			//System.out.println(e.getId());
+		}
 		return e;
 		
 	}
