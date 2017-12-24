@@ -23,6 +23,13 @@ public class UserController {
 	@Resource
 	private UserService userService;
 
+	@RequestMapping(params = "method=register")
+	public String register() {
+		System.out.println("userController.register()");
+		
+		return "/WEB-INF/views/register.jsp";
+	}
+	
 	@RequestMapping(params = "method=home")
 	public String home(Model model,int id) {
 		System.out.println("userController.home()");

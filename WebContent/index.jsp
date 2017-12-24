@@ -3,8 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
 
@@ -33,22 +32,31 @@
 	<div class="page-container">
 		<h1>员工管理系统</h1>
 		<c:if test="${not empty error }">
-				<br>
-			<div class="alert fade in"><font color="red">${error}</font></div>
-		</c:if> 
+			<br>
+			<div class="alert fade in">
+				<font color="red">${error}</font>
+			</div>
+		</c:if>
 		<form action="user.do?method=find" method="post">
-                <input type="text" name="username" class="username" placeholder="用户名">
-                <input type="password" name="password" class="password" placeholder="密码">
-                <button type="submit">Sign me in</button>
-                
-                <div class="error"><span>+</span></div>
-        </form>
-        <form action="register.jsp" method="post">
-                
-                <button type="submit">register</button>
-                
-                <div class="error"><span>+</span></div>
-        </form>
+			<input type="text" name="username" class="username" placeholder="用户名">
+			<input type="password" name="password" class="password"
+				placeholder="密码">
+
+
+			<button type="submit">登录</button>
+
+			<div class="error">
+				<span>+</span>
+			</div>
+		</form>
+		<form action="user.do?method=register" method="post">
+
+			<button type="submit">注册</button>
+
+			<div class="error">
+				<span>+</span>
+			</div>
+		</form>
 	</div>
 
 

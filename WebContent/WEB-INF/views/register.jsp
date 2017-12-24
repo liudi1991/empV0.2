@@ -15,7 +15,7 @@
 
 
 <meta charset="gbk">
-<title>员工管理系统登录</title>
+<title>员工管理系统注册</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="login">
 <meta name="author" content="liudi">
@@ -31,7 +31,7 @@
 
 <body>
 	<div class="page-container">
-		<h1>员工管理系统</h1>
+		<h1>账号注册</h1>
 		<c:if test="${not empty error }">
 				<br>
 			<div class="alert fade in"><font color="red">${error}</font></div>
@@ -39,7 +39,7 @@
 		<form action="user.do?method=save" method="post">
                 <input type="text" name="username" class="username" placeholder="用户名">
                 <input type="password" name="password" class="password" placeholder="密码">
-                <button type="submit">Sign me register</button>
+                <button type="submit">注册</button>
                 
                 <div class="error"><span>+</span></div>
         </form>
