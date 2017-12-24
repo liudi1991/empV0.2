@@ -63,7 +63,7 @@ jQuery(function($) {
 					var pager_selector = "#grid-pager";//·ÖÒ³
 				
 					jQuery(grid_selector).jqGrid({
-						url:'grid.do',
+						url:'emp.do?method=griddata',
 					   	mtype:"POST",
 						datatype: "json",
 						/*data: grid_data,

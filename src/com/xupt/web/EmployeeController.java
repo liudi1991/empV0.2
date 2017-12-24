@@ -23,6 +23,22 @@ public class EmployeeController {
 	@Resource
 	private EmployeeService employeeService;
 
+	@RequestMapping(params = "method=grid")
+	public String grid() {
+		System.out.println("EmployeeController.grid()");
+		
+		return "/WEB-INF/views/Jqgrid.jsp";
+
+	}
+	
+	@RequestMapping(params = "method=griddata")
+	public String griddata() {
+		System.out.println("EmployeeController.grid()");
+		
+		return "/WEB-INF/views/Jqgrid.jsp";
+
+	}
+	
 	@RequestMapping(params = "method=photo")
 	public String photo() {
 		System.out.println("EmployeeController.photo()");

@@ -32,7 +32,7 @@
                 	<a href="sortAsc.do">升序排列</a>
                     <a href="sortDesc.do">降序排列</a>
                     <a href="bar.do">工资分析</a>
-                    <a href="grid.do">jQgrid</a>
+                    <a href="emp.do?method=grid">jQgrid</a>
                 </div>
             </li>
            <li>
@@ -66,7 +66,7 @@
                 	<a href="sortAsc.do">升序排列</a>
                     <a href="sortDesc.do">降序排列</a>
                     <a href="bar.do">工资分析</a>
-                    <a href="grid.do">jQgrid</a>
+                    <a href="emp.do?method=grid">jQgrid</a>
                 </div>
             </li>
             <li>
