@@ -59,6 +59,15 @@ public class UserDAOImpl implements UserDAO{
 		hibernateTemplate.save(user);
 	}
 
+	@Override
+	public boolean findByName(String name) throws SQLException {
+		// TODO Auto-generated method stub
+		if(hibernateTemplate.find("from User where username=?",name).size() > 0){
+			return true;
+		};
+		return false;
+	}
+
 	
 	
 }

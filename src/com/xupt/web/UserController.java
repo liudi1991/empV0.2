@@ -52,16 +52,23 @@ public class UserController {
 	
 	public String find(Model model,HttpSession httpSession,String username, String password) {
 		System.out.println("userController.find()");
-		List<User> list=userService.find(username, password);
-		if (list.size() != 0) {
-			User user=list.get(0);
-			//model.addAttribute("currentUser", user);
-			httpSession.setAttribute("currentUser", user);
-			return "home";
+		boolean isFindByName=userService.findByName(username);
+		if(isFindByName){
+			List<User> list=userService.find(username, password);
+			if (list.size() != 0) {
+				User user=list.get(0);
+				//model.addAttribute("currentUser", user);
+				httpSession.setAttribute("currentUser", user);
+				return "home";
+			}else{
+				model.addAttribute("error", "密码错误，请重新输入！");
+				return "forward:/index.jsp";
+			}
 		}else{
-			model.addAttribute("error", "用户名或者密码错误，请检查！");
+			model.addAttribute("error", "用户名错误，请重新输入！");
 			return "forward:/index.jsp";
 		}
+		
 		
 	}
 	

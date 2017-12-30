@@ -17,6 +17,11 @@ public interface UserDAO {
 	public List<User> find(User user)throws SQLException;
 	
 	/*
+	 * 
+	 */
+	public boolean findByName(String name) throws SQLException;
+	/*
+	 *
 	 * 根据ID查找用户
 	 */
 	public User findById(int id) throws SQLException;

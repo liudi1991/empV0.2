@@ -68,6 +68,16 @@ public class UserService {
 		}
 		return user;
 	}
+	public boolean findByName(String name){
+		boolean isFind=false;
+		try {
+			isFind=userDAOImpl.findByName(name);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return isFind;
+	}
 	
 	public void modify(User user){
 		try {
