@@ -36,7 +36,7 @@ public class LoginHandlerIntercepter implements HandlerInterceptor{
 	public boolean preHandle(HttpServletRequest req, HttpServletResponse resp, Object arg2) throws Exception {
 		// TODO Auto-generated method stub
 		String requestURI = req.getRequestURI();  
-        if(requestURI.indexOf("emp.do")>0 || requestURI.indexOf("user.do")>0){  
+        if(requestURI.indexOf("emp.do")>0){  
             HttpSession session = req.getSession();  
             User user = (User) session.getAttribute("currentUser");  
             if(null !=user){  

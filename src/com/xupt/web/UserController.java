@@ -42,13 +42,13 @@ public class UserController {
 	public String add(String username, String password) {
 		System.out.println("userController.add()");
 		userService.add(username, password);
-		return "index";
+		return "redirect:/index.jsp";
 	}
 	
 	/*
 	 * 登陆界面
 	 */
-	@RequestMapping(params = "method=find",method=RequestMethod.POST)
+	@RequestMapping(params = "method=find")
 	
 	public String find(Model model,HttpSession httpSession,String username, String password) {
 		System.out.println("userController.find()");
@@ -58,9 +58,11 @@ public class UserController {
 			//model.addAttribute("currentUser", user);
 			httpSession.setAttribute("currentUser", user);
 			return "home";
+		}else{
+			model.addAttribute("error", "用户名或者密码错误，请检查！");
+			return "forward:/index.jsp";
 		}
-		model.addAttribute("error", "用户名或者密码错误，请检查！");
-		return "redirect:/index.jsp";
+		
 	}
 	
 	/*

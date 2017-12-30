@@ -71,6 +71,5 @@
 <script type="text/javascript" src="asserts/lib/js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript"
 	src="asserts/lib/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="asserts/app/js/index.js"></script>
-	<script language="javascript" type="text/javascript" charset="utf-8"
-		src="asserts/app/js/timer.js"></script>
+	<script type="text/javascript" src="asserts/app/js/head.js"></script>
+	<script type="text/javascript" charset="utf-8" src="asserts/app/js/timer.js"></script>
