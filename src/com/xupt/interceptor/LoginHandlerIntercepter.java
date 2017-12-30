@@ -44,7 +44,8 @@ public class LoginHandlerIntercepter implements HandlerInterceptor{
                 return true;  
             }else{  
                //没有登陆，转向登陆界面  
-                req.getRequestDispatcher("/index.jsp").forward(req,resp);  
+            	resp.sendRedirect("index.jsp");
+                  
               return false;  
             }  
         }else{  

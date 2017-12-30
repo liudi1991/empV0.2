@@ -52,6 +52,9 @@ public class UserController {
 	
 	public String find(Model model,HttpSession httpSession,String username, String password) {
 		System.out.println("userController.find()");
+		if(null==username){
+			return "redirect:/index.jsp";
+		}
 		boolean isFindByName=userService.findByName(username);
 		if(isFindByName){
 			List<User> list=userService.find(username, password);
