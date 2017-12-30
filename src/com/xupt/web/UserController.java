@@ -60,7 +60,7 @@ public class UserController {
 			return "home";
 		}
 		model.addAttribute("error", "用户名或者密码错误，请检查！");
-		return "index";
+		return "redirect:/index.jsp";
 	}
 	
 	/*
