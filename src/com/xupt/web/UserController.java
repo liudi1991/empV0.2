@@ -42,6 +42,7 @@ public class UserController {
 	public String add(String username, String password) {
 		System.out.println("userController.add()");
 		userService.add(username, password);
+		
 		return "redirect:/index.jsp";
 	}
 	

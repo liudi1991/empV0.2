@@ -36,11 +36,11 @@
 				<br>
 			<div class="alert fade in"><font color="red">${error}</font></div>
 		</c:if> 
-		<form action="user.do?method=find" method="post">
+		<form action="user.do?method=find" method = 'post'>
                 <input type="text" name="username" class="username" placeholder="用户名">
                 <input type="password" name="password" class="password" placeholder="密码">
-                <button type="submit">Sign me in</button>
-                
+                <button class="login" type="button">登陆</button>
+                <button class="register" type="button">注册</button>
                 <div class="error"><span>+</span></div>
         </form>
 	</div>

@@ -1,6 +1,12 @@
 
 jQuery(document).ready(function() {
-
+	$(".login").on("click",function(){
+		$('.page-container form').submit();
+	})
+	
+	$(".register").on("click",function(){
+		window.location.href="user.do?method=register";
+	})
     $('.page-container form').submit(function(){
         var username = $(this).find('.username').val();
         var password = $(this).find('.password').val();
@@ -8,6 +14,7 @@ jQuery(document).ready(function() {
             $(this).find('.error').fadeOut('fast', function(){
                 $(this).css('top', '27px');
             });
+            
             $(this).find('.error').fadeIn('fast', function(){
                 $(this).parent().find('.username').focus();
             });
