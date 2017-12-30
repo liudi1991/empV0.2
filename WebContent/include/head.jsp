@@ -1,89 +1,70 @@
 <%@ page language="java" contentType="text/html; charset=GB18030"
-    pageEncoding="GB18030"%>
-
-<link rel="stylesheet" type="text/css" href="asserts/app/css/index/style.css" />
-
-
+	pageEncoding="utf-8"%>
+<link rel="stylesheet" type="text/css"
+	href="asserts/app/css/index/head-style.css" />
 <div class="nav-top">
-	<span><a href="user.do?method=home&id=${currentUser.id}">Ô±¹¤¹ÜÀíÏµÍ³</a></span>
-    <div class="nav-topright">
-    	<p id="timer"></p>
-        <span><font color="red">ÄúºÃ£º${currentUser.username}</font></span>
-        <span><a href="user.do?method=premodify&id=${currentUser.id}">ÐÞ¸ÄÃÜÂë</a></span>
-        <span><a href="user.do?method=logout">ÍË³öÏµÍ³</a></span>
-    </div> 
+	<span><a href="user.do?method=home&id=${currentUser.id}">å‘˜å·¥ç®¡ç†ç³»ç»Ÿ</a></span>
+	<div class="nav-topright">
+		<span id="timer"></span> <span><font>æ‚¨å¥½ï¼š${currentUser.username}</font></span>
+		<span><a href="user.do?method=premodify&id=${currentUser.id}">ä¿®æ”¹å¯†ç </a></span>
+		<span><a href="user.do?method=logout">é€€å‡ºç³»ç»Ÿ</a></span>
+	</div>
 </div>
 <div class="nav-down">
 	<div class="leftmenu1">
-        <div class="menu-oc"><img src="asserts/app/images/menu-all.png" /></div>
-    	<ul>
-        	<li>
-            	<a class="a_list a_list1">Ô±¹¤ÉèÖÃ</a>
-                <div class="menu_list menu_list_first">
-                	<a class="lista_first" href="emp.do?method=findAll">Ô±¹¤ä¯ÀÀ</a>
-                    <a href="emp.do?method=presave">Ìí¼ÓÔ±¹¤</a>
-                    <a href="emp.do?method=prefind">²éÕÒÔ±¹¤</a>
-                  
-                </div>
-            </li>
-            <li>
-            	<a class="a_list a_list2">Ô±¹¤Òµ¼¨</a>
-                <div class="menu_list">
-                	<a href="sortAsc.do">ÉýÐòÅÅÁÐ</a>
-                    <a href="sortDesc.do">½µÐòÅÅÁÐ</a>
-                    <a href="bar.do">¹¤×Ê·ÖÎö</a>
-                    <a href="emp.do?method=grid">jQgrid</a>
-                </div>
-            </li>
-           <li>
-            	<a class="a_list a_list2">Ô±¹¤·ç²É</a>
-                <div class="menu_list">
-                	<a href="emp.do?method=photo">Ô±¹¤Ïà²á</a>
-                    <a href="#">#</a>
-                    <a href="#">#</a>
-                    <a href="#">##</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="leftmenu2">
-    	<div class="menu-oc1"><img src="asserts/app/images/menu-all.png" /></div>
-        <ul>
-        	<li>
-            	<a class="j_a_list j_a_list1"></a>
-                <div class="j_menu_list j_menu_list_first">
-                	<span class="sp1"><i></i>Ô±¹¤ÉèÖÃ</span>
-                	<a class="j_lista_first" href="emp.do?method=findAll">Ô±¹¤ä¯ÀÀ</a>
-                    <a href="emp.do?method=presave">Ìí¼ÓÔ±¹¤</a>
-                    <a href="emp.do?method=prefind">²éÕÒÔ±¹¤</a>
-                    
-                </div>
-            </li>
-            <li>
-            	<a class="j_a_list j_a_list2"></a>
-                <div class="j_menu_list">
-                	<span class="sp2"><i></i>Ô±¹¤Òµ¼¨</span>
-                	<a href="sortAsc.do">ÉýÐòÅÅÁÐ</a>
-                    <a href="sortDesc.do">½µÐòÅÅÁÐ</a>
-                    <a href="bar.do">¹¤×Ê·ÖÎö</a>
-                    <a href="emp.do?method=grid">jQgrid</a>
-                </div>
-            </li>
-            <li>
-            	<a class="j_a_list j_a_list2"></a>
-                <div class="j_menu_list">
-                <span class="sp2"><i></i>Ô±¹¤·ç²É</span>
-                	<a href="emp.do?method=photo">Ô±¹¤Ïà²á</a>
-                    <a href="#">#</a>
-                    <a href="#">#</a>
-                    <a href="#">##</a>
-                </div>
-            </li>
-            
-        </ul>
-        
-    </div>
-    
+		<div class="menu-oc">
+			<img src="asserts/app/images/menu-all.png" />
+		</div>
+		<ul>
+			<li><a class="a_list a_list1">å‘˜å·¥è®¾ç½®</a>
+				<div class="menu_list menu_list_first">
+					<a class="lista_first" href="emp.do?method=findAll">å‘˜å·¥æµè§ˆ</a> <a
+						href="emp.do?method=presave">æ·»åŠ å‘˜å·¥</a> <a
+						href="emp.do?method=prefind">æŸ¥æ‰¾å‘˜å·¥</a>
+
+				</div></li>
+			<li><a class="a_list a_list2">å‘˜å·¥ä¸šç»©</a>
+				<div class="menu_list">
+					<a href="sortAsc.do">å‡åºæŽ’åˆ—</a> <a href="sortDesc.do">é™åºæŽ’åˆ—</a> <a
+						href="bar.do">å·¥èµ„åˆ†æž</a> <a href="emp.do?method=grid">jQgrid</a>
+				</div></li>
+			<li><a class="a_list a_list3">å‘˜å·¥é£Žé‡‡</a>
+				<div class="menu_list">
+					<a href="emp.do?method=photo">å‘˜å·¥ç›¸å†Œ</a> <a href="#">#</a> <a
+						href="#">#</a> <a href="#">##</a>
+				</div></li>
+		</ul>
+	</div>
+	<div class="leftmenu2">
+		<div class="menu-oc1">
+			<img src="asserts/app/images/menu-all.png" />
+		</div>
+		<ul>
+			<li><a class="j_a_list j_a_list1"></a>
+				<div class="j_menu_list j_menu_list_first">
+					<span class="sp1"><i></i>å‘˜å·¥è®¾ç½®</span> <a class="j_lista_first"
+						href="emp.do?method=findAll">å‘˜å·¥æµè§ˆ</a> <a
+						href="emp.do?method=presave">æ·»åŠ å‘˜å·¥</a> <a
+						href="emp.do?method=prefind">æŸ¥æ‰¾å‘˜å·¥</a>
+
+				</div></li>
+			<li><a class="j_a_list j_a_list2"></a>
+				<div class="j_menu_list">
+					<span class="sp2"><i></i>å‘˜å·¥ä¸šç»©</span> <a href="sortAsc.do">å‡åºæŽ’åˆ—</a>
+					<a href="sortDesc.do">é™åºæŽ’åˆ—</a> <a href="bar.do">å·¥èµ„åˆ†æž</a> <a
+						href="emp.do?method=grid">jQgrid</a>
+				</div></li>
+			<li><a class="j_a_list j_a_list2"></a>
+				<div class="j_menu_list">
+					<span class="sp2"><i></i>å‘˜å·¥é£Žé‡‡</span> <a href="emp.do?method=photo">å‘˜å·¥ç›¸å†Œ</a>
+					<a href="#">#</a> <a href="#">#</a> <a href="#">##</a>
+				</div></li>
+
+		</ul>
+
+	</div>
+</div>
 <script type="text/javascript" src="asserts/app/js/jquery-1.6.min.js"></script>
-<script type="text/javascript" src="asserts/app/js/index.js"></script>
-<script language="javascript" type="text/javascript" charset="utf-8" src="asserts/app/js/timer.js"></script>
+	<script type="text/javascript" src="asserts/app/js/index.js"></script>
+	<script language="javascript" type="text/javascript" charset="utf-8"
+		src="asserts/app/js/timer.js"></script>

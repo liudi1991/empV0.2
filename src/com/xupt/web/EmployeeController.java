@@ -1,8 +1,10 @@
 package com.xupt.web;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -74,16 +76,23 @@ public class EmployeeController {
 	@RequestMapping(params = "method=save")
 	public String save(String name, int salary, int age) {
 		System.out.println("EmployeeController.save()");
-
 		employeeService.add(name, salary, age);
 		return "emp.do?method=findAll";
 	}
 
 	@RequestMapping(params = "method=findAll")
-	public String findAll(Model model) {
+	public String findAll(Model model,HttpServletRequest request) {
 		System.out.println("EmployeeController.findAll()");
+		Map modelMap = model.asMap();
+		System.out.println(model);
+        for (Object modelKey : modelMap.keySet()) {
+            Object modelValue = modelMap.get(modelKey);
+            System.out.println(modelKey + " -- " + modelValue);
+        }
+//		User user= (User)request.getSession().getAttribute("currentUser");
+//		System.out.println(user.getUsername());
 		List<Employee> list = employeeService.findAll();
-
+		//model.addAttribute("currentUser", user);
 		model.addAttribute("employees", list);
 		return "/WEB-INF/views/emplist.jsp";
 	}
