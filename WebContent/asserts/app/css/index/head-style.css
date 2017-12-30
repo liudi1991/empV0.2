@@ -77,7 +77,9 @@ a {
 .leftmenu1 .menu-oc {
 	position: absolute;
 	margin-left: 240px;
-	cursor: pointer
+	cursor: pointer;
+	width: 52px;
+	height: 52px;
 }
 
 .leftmenu1>ul {
@@ -155,7 +157,10 @@ a {
 .leftmenu2 .menu-oc1 {
 	position: absolute;
 	margin-left: 52px;
-	cursor: pointer
+	cursor: pointer;
+	width: 52px;
+	height: 52px;
+	
 }
 
 .leftmenu2 ul {

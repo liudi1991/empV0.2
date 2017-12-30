@@ -11,8 +11,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet"
-	href="<%=basePath%>/asserts/lib/css/bootstrap.min.css"> 
+
 <title>首页</title>
 
 </head>
@@ -22,6 +21,7 @@
     <div class="rightcon">
     	<div class="right_con">
             <p style="text-align: center">
+            
 				<h1 align="center">员工列表</h1>
 				<table class="table table-bordered" align="center">
 					<tr class="table_header">
@@ -60,9 +60,8 @@
 
 
 <%-- <script type="text/javascript"
-	src="<%=basePath%>asserts/lib/js/jquery-1.9.1.min.js"></script> --%>
-<script type="text/javascript"
-	src="<%=basePath%>asserts/lib/js/bootstrap.min.js"></script>
+	src="<%=basePath%>asserts/lib/js/jquery-1.8.0.min.js"></script> --%>
+
 </body>
 </html>
 

@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=GB18030"
 	pageEncoding="utf-8"%>
+  <link rel="stylesheet"
+	href="asserts/lib/css/bootstrap.min.css">   
 <link rel="stylesheet" type="text/css"
 	href="asserts/app/css/index/head-style.css" />
+
 <div class="nav-top">
 	<span><a href="user.do?method=home&id=${currentUser.id}">员工管理系统</a></span>
 	<div class="nav-topright">
@@ -64,7 +67,9 @@
 
 	</div>
 </div>
-<script type="text/javascript" src="asserts/app/js/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="asserts/lib/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript"
+	src="asserts/lib/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="asserts/app/js/index.js"></script>
 	<script language="javascript" type="text/javascript" charset="utf-8"
 		src="asserts/app/js/timer.js"></script>
