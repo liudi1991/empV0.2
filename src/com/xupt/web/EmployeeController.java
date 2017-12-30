@@ -29,7 +29,7 @@ public class EmployeeController {
 	public String grid() {
 		System.out.println("EmployeeController.grid()");
 		
-		return "/WEB-INF/views/Jqgrid.jsp";
+		return "Jqgrid";
 
 	}
 	
@@ -37,7 +37,7 @@ public class EmployeeController {
 	public String griddata() {
 		System.out.println("EmployeeController.grid()");
 		
-		return "/WEB-INF/views/Jqgrid.jsp";
+		return "Jqgrid";
 
 	}
 	
@@ -45,7 +45,7 @@ public class EmployeeController {
 	public String photo() {
 		System.out.println("EmployeeController.photo()");
 		
-		return "/WEB-INF/views/PhotoView.jsp";
+		return "PhotoView";
 
 	}
 	
@@ -55,7 +55,7 @@ public class EmployeeController {
 		System.out.println("EmployeeController.find()");
 		Employee e = employeeService.findById(id);
 		model.addAttribute("e", e);
-		return "/WEB-INF/views/empInfo.jsp";
+		return "empInfo";
 
 	}
 
@@ -63,14 +63,14 @@ public class EmployeeController {
 	public String prefind() {
 		System.out.println("EmployeeController.prefind()");
 
-		return "/WEB-INF/views/searchEmp.jsp";
+		return "searchEmp";
 	}
 
 	@RequestMapping(params = "method=presave")
 	public String presave() {
 		System.out.println("EmployeeController.presave()");
 
-		return "/WEB-INF/views/addEmp.jsp";
+		return "addEmp";
 	}
 
 	@RequestMapping(params = "method=save")
@@ -94,7 +94,7 @@ public class EmployeeController {
 		List<Employee> list = employeeService.findAll();
 		//model.addAttribute("currentUser", user);
 		model.addAttribute("employees", list);
-		return "/WEB-INF/views/emplist.jsp";
+		return "emplist";
 	}
 
 	@RequestMapping(params = "method=findByID")
@@ -103,7 +103,7 @@ public class EmployeeController {
 		Employee e = employeeService.findById(id);
 
 		model.addAttribute("e", e);
-		return "/WEB-INF/views/empInfo.jsp";
+		return "empInfo";
 	}
 
 	@RequestMapping(params = "method=premodify")
@@ -112,7 +112,7 @@ public class EmployeeController {
 		Employee e = employeeService.findById(id);
 
 		model.addAttribute("e", e);
-		return "/WEB-INF/views/updateEmp.jsp";
+		return "updateEmp";
 	}
 
 	@RequestMapping(params = "method=modify")

@@ -31,7 +31,7 @@ public class UserController {
 	@RequestMapping(params = "method=register",method=RequestMethod.GET)
 	public String register() {
 		System.out.println("userController.register()");
-		return "/WEB-INF/views/register.jsp";
+		return "register";
 	}
 	
 	
@@ -42,7 +42,7 @@ public class UserController {
 	public String add(String username, String password) {
 		System.out.println("userController.add()");
 		userService.add(username, password);
-		return "index.jsp";
+		return "index";
 	}
 	
 	/*
@@ -55,10 +55,10 @@ public class UserController {
 		if (list.size() != 0) {
 			User user=list.get(0);
 			httpSession.setAttribute("currentUser", user);
-			return "/WEB-INF/views/home.jsp";
+			return "home";
 		}
 		model.addAttribute("error", "用户名或者密码错误，请检查！");
-		return "index.jsp";
+		return "index";
 	}
 	
 	/*
@@ -67,7 +67,7 @@ public class UserController {
 	@RequestMapping(params = "method=home",method=RequestMethod.GET)
 	public String home(Model model) {
 		System.out.println("userController.home()");
-		return "/WEB-INF/views/home.jsp";
+		return "home";
 	}
 	
 	
@@ -77,7 +77,7 @@ public class UserController {
 	@RequestMapping(params="method=premodify")
 	public String premodify(Model model,int id) {
 		System.out.println("userController.premodify()");
-		return "/WEB-INF/views/updateUser.jsp";
+		return "updateUser";
 	}
 	
 	/*
@@ -90,13 +90,13 @@ public class UserController {
 		user.setPassword(password);
 		userService.modify(user);
 		httpSession.setAttribute("currentUser", user);
-		return "/WEB-INF/views/home.jsp";
+		return "home";
 	}
 	
 	@RequestMapping(params="method=logout")
 	public String logout() {
 		System.out.println("userController.logout()");
-		return "index.jsp";
+		return "index";
 	}
 	
 	
