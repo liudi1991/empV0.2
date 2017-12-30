@@ -49,11 +49,13 @@ public class UserController {
 	 * 登陆界面
 	 */
 	@RequestMapping(params = "method=find",method=RequestMethod.POST)
-	public String find(Model model, HttpSession httpSession,String username, String password) {
+	
+	public String find(Model model,HttpSession httpSession,String username, String password) {
 		System.out.println("userController.find()");
 		List<User> list=userService.find(username, password);
 		if (list.size() != 0) {
 			User user=list.get(0);
+			//model.addAttribute("currentUser", user);
 			httpSession.setAttribute("currentUser", user);
 			return "home";
 		}
@@ -93,10 +95,14 @@ public class UserController {
 		return "home";
 	}
 	
+	/*
+	 * 退出系统
+	 */
 	@RequestMapping(params="method=logout")
-	public String logout() {
+	public String logout(HttpSession httpSession) {
 		System.out.println("userController.logout()");
-		return "index";
+		httpSession.invalidate();
+		return "redirect:/index.jsp";
 	}
 	
 	

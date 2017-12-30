@@ -135,7 +135,7 @@ public class EmployeeController {
 
 		employeeService.delete(e);
 
-		return "emp.do?method=findAll";
+		return "/index";
 	}
 
 	public EmployeeService getEmployeeService() {

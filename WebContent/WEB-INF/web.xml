@@ -16,10 +16,17 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    
+    
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
+    
+    
+      
+    
+	
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
