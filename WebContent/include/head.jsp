@@ -8,7 +8,8 @@
 <div class="nav-top">
 	<span><a href="user.do?method=home&id=${currentUser.id}">员工管理系统</a></span>
 	<div class="nav-topright">
-		<span id="timer"></span> <span><font>您好：${currentUser.username}</font></span>
+		<span ><a id="timer"></a></span> 
+		<span><a>您好：${currentUser.username}</a></span>
 		<span><a href="user.do?method=premodify&id=${currentUser.id}">修改密码</a></span>
 		<span><a href="user.do?method=logout">退出系统</a></span>
 	</div>

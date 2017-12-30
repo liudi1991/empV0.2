@@ -23,7 +23,7 @@
             <p style="text-align: center">
             
 				<h1 align="center">员工列表</h1>
-				<table class="table table-bordered" align="center">
+				<table class="table table-bordered" align="center" style="margin-left: 50px">
 					<tr class="table_header">
 						<td>ID</td>
 						<td>姓名</td>

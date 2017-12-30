@@ -26,7 +26,7 @@
 				<h1>添加员工</h1>
 				<table>
 					<form id="add_from" action="emp.do?method=save" method="post"
-						onsubmit="return check()">
+						onsubmit="return check()" accept-charset="UTF-8">
 						<div class="form-group">
 							<label class="control-label">姓名</label>
 							<div class="controls">
