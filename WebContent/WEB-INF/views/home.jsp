@@ -17,7 +17,7 @@
 		<div class="right_con">
 			<p style="text-align: center">
 				<h1 align="center">欢迎进入员工管理系统，</h1>
-				<h2 align="center">使用技术： bootstrap+jquery+Servlet3.0+EL+JSTL+mvc模式</h2>
+				<h2 align="center">使用技术： BootStrap+jQuery+Servlet3.0+EL表达式+ JSTL+ Spring MVC框架</h2>
 			</p>
 
 		</div>
