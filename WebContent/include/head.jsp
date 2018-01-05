@@ -34,8 +34,8 @@
 				</div></li>
 			<li><a class="a_list a_list2">员工业绩</a>
 				<div class="menu_list">
-					<a href="sortAsc.do">升序排列</a> <a href="sortDesc.do">降序排列</a> <a
-						href="bar.do">工资分析</a> <a href="emp.do?method=grid">jQgrid</a>
+					<a href="#">升序排列</a> <a href="#">降序排列</a> <a
+						href="#">工资分析</a> <a href="#">jQgrid</a>
 				</div></li>
 			<li><a class="a_list a_list3">员工风采</a>
 				<div class="menu_list">
@@ -59,9 +59,9 @@
 				</div></li>
 			<li><a class="j_a_list j_a_list2"></a>
 				<div class="j_menu_list">
-					<span class="sp2"><i></i>员工业绩</span> <a href="sortAsc.do">升序排列</a>
-					<a href="sortDesc.do">降序排列</a> <a href="bar.do">工资分析</a> <a
-						href="emp.do?method=grid">jQgrid</a>
+					<span class="sp2"><i></i>员工业绩</span> <a href="#">升序排列</a>
+					<a href="#">降序排列</a> <a href="#">工资分析</a> <a
+						href="#">jQgrid</a>
 				</div></li>
 			<li><a class="j_a_list j_a_list2"></a>
 				<div class="j_menu_list">
