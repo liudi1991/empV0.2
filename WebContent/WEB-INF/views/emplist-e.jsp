@@ -11,6 +11,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="asserts/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="asserts/easyui/themes/icon.css">
+
 
 <title>首页</title>
 
@@ -20,41 +23,10 @@
 	<%@include file="/include/head.jsp"%>
 	<div class="rightcon">
 		<div class="right_con">
-
-			<h1 align="center">员工列表</h1>
-
-			<table class="table table-bordered" align="center"
-				style="margin-left: 50px">
-				<tr class="table_header">
-					<td>ID</td>
-					<td>姓名</td>
-					<td>薪水</td>
-					<td>年龄</td>
-					<td>操作</td>
-				</tr>
-				<c:if test="${empty employees}">
-					<tr>
-						<td colspan="5">没有数据</td>
-					</tr>
-				</c:if>
-				<c:if test="${not empty employees }">
-					<c:forEach var="e" items="${employees}">
-						<tr>
-							<td>${e.id}</td>
-							<td>${e.name}</td>
-							<td>￥${e.salary }</td>
-							<td>${e.age}</td>
-							<td><a class="btn btn-info"
-								href="emp.do?method=findByID&id=${e.id}">查看详情</a>&nbsp; <a
-								class="btn btn-warning"
-								href="emp.do?method=premodify&id=${e.id}">修改</a>&nbsp; <a
-								class="btn btn-danger" href="emp.do?method=delete&id=${e.id}"
-								onclick="return confirm('确定删除${e.name}吗?');">删除</a></td>
-						</tr>
-					</c:forEach>
-				</c:if>
-
-			</table>
+			<div style="width: 80%;margin-left:5%" >
+				<table id="emp_list"></table>
+			</div>
+			
 
 
 		</div>
@@ -64,7 +36,30 @@
 
 	<%-- <script type="text/javascript"
 	src="<%=basePath%>asserts/lib/js/jquery-1.8.0.min.js"></script> --%>
+<script type="text/javascript"
+	src="asserts/app/js/jquery.easyui.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#emp_list').datagrid({
+        title : '员工列表',
+        url:"emp.do?method=findAll_ajax",
+        fitColumns:true,
+        autoRowHeight:true,
+        striped:true,
+        loadMsg:'正在加载',
+        rownumbers:true,
+        columns:[[
+			{field:'id',title:'id',width:100,align:'center'},
+			{field:'name',title:'Name',width:100,align:'center'},
+			{field:'age',title:'age',width:100,align:'center'},
+			{field:'salary',title:'salary',width:100,align:'center'}
+			
+	    ]]
+    });
 
+})
+
+</script>
 </body>
 </html>
 

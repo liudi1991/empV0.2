@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.xupt.dao.EmployeeDAO;
@@ -96,7 +97,21 @@ public class EmployeeController {
 		model.addAttribute("employees", list);
 		return "emplist";
 	}
-
+	
+	@RequestMapping(params = "method=findAll_easyui")
+	public String findAll_easyui(Model model,HttpServletRequest request) {
+		return "emplist-e";
+	}
+	
+	
+	@RequestMapping(params = "method=findAll_ajax")
+	public @ResponseBody List<Employee> findAll_ajax(Model model,HttpServletRequest request) {
+		System.out.println("EmployeeController.findAll_ajax()");
+		
+		List<Employee> list = employeeService.findAll();
+		return list;
+	}
+	
 	@RequestMapping(params = "method=findByID")
 	public String findByID(Model model, int id) {
 		System.out.println("EmployeeController.findByID()");

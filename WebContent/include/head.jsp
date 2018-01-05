@@ -27,7 +27,7 @@
 			<li><a class="a_list a_list1">员工设置</a>
 				<div class="menu_list menu_list_first">
 					<a class="lista_first" href="emp.do?method=findAll">员工浏览BootStrap版</a>
-					<a class="lista_first" href="emp.do?method=findAll">员工浏览EasyUI版</a> <a
+					<a class="lista_first" href="emp.do?method=findAll_easyui">员工浏览EasyUI版</a> <a
 						href="emp.do?method=presave">添加员工</a> <a
 						href="emp.do?method=prefind">查找员工</a>
 

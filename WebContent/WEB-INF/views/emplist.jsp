@@ -22,9 +22,9 @@
 		<div class="right_con">
 
 
-			<h1 align="center">员工列表</h1>
+			<h1 align="center" style="width: 70%">员工列表</h1>
 			<table class="table table-bordered table-hover " 
-				style="margin-left: 50px;width: 50%;">
+				style="margin-left: 50px;width: 70%;">
 				<thead>
 					<tr class="table_header">
 						<th>ID</th>
