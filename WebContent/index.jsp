@@ -25,7 +25,7 @@
 自动等比例调整图片并填充整浏览器个屏幕。
 循环展示图片，支持滑动和淡入淡出等多种图片切换效果。
 导航按钮，支持键盘方向键导航。 -->
-<link rel="stylesheet" href="asserts/app/css/supersized.css">
+<link rel="stylesheet" href="asserts/lib/css/supersized.css">
 
 <link rel="stylesheet" href="asserts/app/css/index.css">
 
@@ -54,11 +54,10 @@
 
 
 	<!-- Javascript -->
-	<script src="asserts/app/js/jquery-1.8.2.min.js"></script>
-	<script src="asserts/app/js/supersized.3.2.7.min.js"></script>
+	<script src="asserts/lib/js/jquery-1.8.2.min.js"></script>
+	<script src="asserts/lib/js/supersized.3.2.7.min.js"></script>
 	
 	<script src="asserts/app/js/index-supersized-init.js"></script>
-	
 	<script src="asserts/app/js/index.js"></script>
 
 </body>

@@ -19,6 +19,7 @@ a {
 	text-decoration: none
 }
 
+/* 顶部 */
 .nav-top {
 	width: 100%;
 	height: 65px;
@@ -27,10 +28,10 @@ a {
 	color: #fff
 }
 
-.nav-top>span {
+.nav-top > span {
 	float: left;
 	height: 65px;
-	line-height: 65px;
+	line-height: 65px;/* 设置行间距 */
 	display: block;
 	font-family: "方正兰亭粗黑简体";
 	font-size: 40px;
@@ -108,15 +109,15 @@ a {
 }
 
 .leftmenu1>ul>li>a.a_list1 {
-	background: url(ic_grid.png) no-repeat 15px center
+	background: url(../img/head/ic_user.png) no-repeat 15px center
 }
 
 .leftmenu1>ul>li>a.a_list2 {
-	background: url(ic_user.png) no-repeat 15px center
+	background: url(../img/head/ic_grid.png) no-repeat 15px center
 }
 
 .leftmenu1>ul>li>a.a_list3 {
-	background: url(ic_chats.png) no-repeat 15px center
+	background: url(../img/head/ic_chats.png) no-repeat 15px center
 }
 
 .leftmenu1>ul>li>.menu_list {
@@ -138,7 +139,9 @@ a {
 	line-height: 38px;
 	text-indent: 3em;
 	color: #FFF;
-	display: block
+	display: block;
+	text-decoration: none;
+	
 }
 
 .leftmenu1>ul>li>.menu_list>a:hover {
@@ -187,15 +190,15 @@ a {
 }
 
 .leftmenu2>ul>li>a.j_a_list1 {
-	background: url(ic_grid.png) no-repeat 15px center
+	background: url(../img/head/ic_user.png) no-repeat 15px center
 }
 
 .leftmenu2>ul>li>a.j_a_list2 {
-	background: url(ic_user.png) no-repeat 15px center
+	background: url(../img/head/ic_grid.png) no-repeat 15px center
 }
 
 .leftmenu2>ul>li>a.j_a_list3 {
-	background: url(ic_chats.png) no-repeat 15px center
+	background: url(../img/head/ic_chats.png) no-repeat 15px center
 }
 
 .leftmenu2>ul>li>.j_menu_list {
@@ -231,15 +234,15 @@ a {
 }
 
 .sp1 {
-	background: url(../images/ic_grid.png) no-repeat 15px center #65cea7;
+	background: url(../img/head/ic_user.png) no-repeat 15px center #65cea7;
 }
 
 .sp2 {
-	background: url(../images/ic_user.png) no-repeat 15px center #65cea7
+	background: url(../img/head/ic_grid.png) no-repeat 15px center #65cea7
 }
 
 .sp3 {
-	background: url(../images/ic_chats.png) no-repeat 15px center #65cea7
+	background: url(../img/head/ic_chats.png) no-repeat 15px center #65cea7
 }
 
 .leftmenu2>ul>li>.j_menu_list>a {
@@ -249,7 +252,8 @@ a {
 	line-height: 38px;
 	text-indent: 3em;
 	color: #FFF;
-	display: block
+	display: block;
+	text-decoration: none;
 }
 
 .leftmenu2>ul>li>.j_menu_list>a:hover {

@@ -3,7 +3,7 @@
   <link rel="stylesheet"
 	href="asserts/lib/css/bootstrap.min.css">   
 <link rel="stylesheet" type="text/css"
-	href="asserts/app/css/index/head-style.css" />
+	href="asserts/app/css/head.css" />
 <style type="text/css">
 .table th, .table td {
 	text-align: center;
@@ -21,7 +21,7 @@
 <div class="nav-down">
 	<div class="leftmenu1">
 		<div class="menu-oc">
-			<img src="asserts/app/images/menu-all.png" />
+			<img src="asserts/app/img/head/menu-all.png" />
 		</div>
 		<ul>
 			<li><a class="a_list a_list1">员工设置</a>
@@ -46,7 +46,7 @@
 	</div>
 	<div class="leftmenu2">
 		<div class="menu-oc1">
-			<img src="asserts/app/images/menu-all.png" />
+			<img src="asserts/app/img/head/menu-all.png" />
 		</div>
 		<ul>
 			<li><a class="j_a_list j_a_list1"></a>
@@ -63,9 +63,9 @@
 					<a href="#">降序排列</a> <a href="#">工资分析</a> <a
 						href="#">jQgrid</a>
 				</div></li>
-			<li><a class="j_a_list j_a_list2"></a>
+			<li><a class="j_a_list j_a_list3"></a>
 				<div class="j_menu_list">
-					<span class="sp2"><i></i>员工风采</span> <a href="emp.do?method=photo">员工相册</a>
+					<span class="sp3"><i></i>员工风采</span> <a href="emp.do?method=photo">员工相册</a>
 					<a href="#">#</a> <a href="#">#</a> <a href="#">##</a>
 				</div></li>
 
@@ -73,8 +73,7 @@
 
 	</div>
 </div>
-<script type="text/javascript" src="asserts/lib/js/jquery-1.8.0.min.js"></script>
-<script type="text/javascript"
-	src="asserts/lib/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="asserts/app/js/head.js"></script>
-	<script type="text/javascript" charset="utf-8" src="asserts/app/js/timer.js"></script>
+<script type="text/javascript" src="asserts/lib/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="asserts/lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="asserts/app/js/head.js"></script>
+<script type="text/javascript" charset="utf-8" src="asserts/app/js/timer.js"></script>
