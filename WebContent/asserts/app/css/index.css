@@ -16,12 +16,12 @@ body {
 }
 
 .page-container {
-    margin: 120px auto 0 auto;
+    margin: 220px auto 0 auto;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: bold;	/* 字体粗细 */
     text-shadow: 0 1px 4px rgba(0,0,0,.2);
 }
 
@@ -48,7 +48,7 @@ input {
     -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
     -o-transition: all .2s;
@@ -57,12 +57,12 @@ input {
     -ms-transition: all .2s;
 }
 
-input:-moz-placeholder { color: #fff; }
-input:-ms-input-placeholder { color: #fff; }
-input::-webkit-input-placeholder { color: #fff; }
+input:-moz-placeholder /* Mozilla Firefox 19+ */{ color: #fff; }
+input:-ms-input-placeholder /* Internet Explorer 10+ */{ color: #fff; }
+input::-webkit-input-placeholder  /* WebKit browsers */{ color: #fff; }
 
 input:focus {
-    outline: none;
+    outline: none;/* 边框  */
     -moz-box-shadow:
         0 2px 3px 0 rgba(0,0,0,.1) inset,
         0 2px 7px 0 rgba(0,0,0,.2);
@@ -75,7 +75,7 @@ input:focus {
 }
 
 button {
-    cursor: pointer;
+    cursor: pointer;/* 光标呈现为指示链接的指针（一只手） */
     width: 150px;
     height: 44px;
     margin-top: 25px;
@@ -95,7 +95,7 @@ button {
         0 15px 30px 0 rgba(255,255,255,.25) inset,
         0 2px 7px 0 rgba(0,0,0,.2);
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
@@ -159,26 +159,6 @@ button:active {
 
 }
 
-.connect {
-    width: 305px;
-    margin: 35px auto 0 auto;
-    font-size: 18px;
-    font-weight: 700;
-    text-shadow: 0 1px 3px rgba(0,0,0,.2);
-}
-
-.connect a {
-    display: inline-block;
-    width: 32px;
-    height: 35px;
-    margin-top: 15px;
-    -o-transition: all .2s;
-    -moz-transition: all .2s;
-    -webkit-transition: all .2s;
-    -ms-transition: all .2s;
-}
-
-.connect a:hover { background-position: center bottom; }
 
 
 
