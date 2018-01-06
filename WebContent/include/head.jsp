@@ -42,6 +42,11 @@
 					<a href="emp.do?method=photo">员工相册</a> <a href="#">#</a> <a
 						href="#">#</a> <a href="#">##</a>
 				</div></li>
+			<li><a class="a_list a_list3">地图学习</a>
+				<div class="menu_list">
+					<a href="#">地图1</a> <a href="#">地图2</a> <a
+						href="#">地图3</a> <a href="#">地图4</a>
+				</div></li>
 		</ul>
 	</div>
 	<div class="leftmenu2">
@@ -68,7 +73,11 @@
 					<span class="sp3"><i></i>员工风采</span> <a href="emp.do?method=photo">员工相册</a>
 					<a href="#">#</a> <a href="#">#</a> <a href="#">##</a>
 				</div></li>
-
+			<li><a class="j_a_list j_a_list3"></a>
+				<div class="j_menu_list">
+					<span class="sp3"><i></i>地图学习</span> <a href="#">地图1</a>
+					<a href="#">地图2</a> <a href="#">地图3</a> <a href="#">地图4</a>
+				</div></li>
 		</ul>
 
 	</div>
