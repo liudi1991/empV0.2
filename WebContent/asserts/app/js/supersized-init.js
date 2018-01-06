@@ -3,7 +3,7 @@ jQuery(function($){
     $.supersized({
 
         // Functionality
-        slide_interval     : 1000,    // 图片切换间隔时间（毫秒）Length between transitions
+        slide_interval     : 4000,    // 图片切换间隔时间（毫秒）Length between transitions
         transition         : 1,    // 图片切换效果, 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
         transition_speed   : 1000,    // 切换速度，默认750。Speed of transition
         performance        : 1,    // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
@@ -24,7 +24,8 @@ jQuery(function($){
                                  {image : 'asserts/app/img/backgrounds/2.jpg'},
                                  {image : 'asserts/app/img/backgrounds/3.jpg'},
                                  {image : 'asserts/app/img/backgrounds/4.jpg'},
-                                 {image : 'asserts/app/img/backgrounds/5.jpg'}
+                                 {image : 'asserts/app/img/backgrounds/5.jpg'},
+                                 {image : 'asserts/app/img/backgrounds/6.jpg'}
                              ]
 
     });
