@@ -57,7 +57,7 @@
 	<script src="asserts/app/js/jquery-1.8.2.min.js"></script>
 	<script src="asserts/app/js/supersized.3.2.7.min.js"></script>
 	
-	<script src="asserts/app/js/supersized-init.js"></script>
+	<script src="asserts/app/js/index-supersized-init.js"></script>
 	
 	<script src="asserts/app/js/index.js"></script>
 
