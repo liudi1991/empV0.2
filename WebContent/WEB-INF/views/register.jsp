@@ -23,9 +23,9 @@
 <!-- CSS -->
 <link rel='stylesheet'
 	href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-<link rel="stylesheet" href="asserts/app/css/login/reset.css">
-<link rel="stylesheet" href="asserts/app/css/login/supersized.css">
-<link rel="stylesheet" href="asserts/app/css/login/style.css">
+
+<link rel="stylesheet" href="asserts/lib/css/supersized.css">
+<link rel="stylesheet" href="asserts/app/css/index.css">
 
 </head>
 
@@ -52,10 +52,11 @@
 
 
 	<!-- Javascript -->
-	<script src="asserts/app/js/jquery-1.8.2.min.js"></script>
-	<script src="asserts/app/js/supersized.3.2.7.min.js"></script>
-	<script src="asserts/app/js/supersized-init.js"></script>
-	<script src="asserts/app/js/register.js"></script>
+	<script src="asserts/lib/js/jquery-1.8.2.min.js"></script>
+	<script src="asserts/lib/js/supersized.3.2.7.min.js"></script>
+	
+	<script src="asserts/app/js/index-supersized-init.js"></script>
+	<script src="asserts/app/js/index.js"></script>
 
 </body>
 </html>

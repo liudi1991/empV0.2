@@ -12,8 +12,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ê×Ò³</title>
-<link rel="stylesheet"
-	href="<%=basePath%>/asserts/lib/css/bootstrap.min.css">
+
 <style>
 .galleria {
 	width: 800px;
@@ -50,7 +49,7 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="asserts/lib/js/jquery-1.8.0.min.js"></script>
+	
 	<script src="asserts/galleria/galleria-1.4.2.min.js"></script>
 	<script>
 		Galleria

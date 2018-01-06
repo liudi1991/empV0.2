@@ -11,8 +11,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet"
-	href="<%=basePath%>/asserts/lib/css/bootstrap.min.css">
+
 <title>Ê×Ò³</title>
 
 </head>
@@ -67,9 +66,6 @@
 </div>
 
 
-<%-- <script type="text/javascript"
-	src="<%=basePath%>asserts/lib/js/jquery-1.9.1.min.js"></script> --%>
-<script type="text/javascript"
-		src="<%=basePath%>asserts/lib/js/bootstrap.min.js"></script>
+
 </body>
 </html>

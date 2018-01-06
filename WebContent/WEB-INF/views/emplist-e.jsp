@@ -37,7 +37,7 @@
 	<%-- <script type="text/javascript"
 	src="<%=basePath%>asserts/lib/js/jquery-1.8.0.min.js"></script> --%>
 <script type="text/javascript"
-	src="asserts/app/js/jquery.easyui.min.js"></script>
+	src="asserts/lib/js/jquery.easyui.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('#emp_list').datagrid({

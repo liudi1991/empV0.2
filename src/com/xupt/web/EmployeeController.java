@@ -78,7 +78,8 @@ public class EmployeeController {
 	public String save(String name, int salary, int age) {
 		System.out.println("EmployeeController.save()");
 		employeeService.add(name, salary, age);
-		return "emp.do?method=findAll";
+		
+		return "redirect:emp.do?method=findAll";
 	}
 
 	@RequestMapping(params = "method=findAll")

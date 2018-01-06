@@ -6,7 +6,6 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
 <title>首页</title>
 
 </head>
@@ -15,10 +14,10 @@
 	<%@include file="/include/head.jsp" %><!--静态包含-->
 	<div class="rightcon">
 		<div class="right_con">
-			<p style="text-align: center">
+			<div style="text-align: center;margin-top: 150px">
 				<h1 align="center">欢迎进入员工管理系统，</h1>
 				<h2 align="center">使用技术： BootStrap+jQuery+Servlet3.0+EL表达式+ JSTL+ Spring MVC框架</h2>
-			</p>
+			</div>
 
 		</div>
 	</div>

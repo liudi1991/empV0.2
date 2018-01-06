@@ -18,6 +18,9 @@ ul, li {
 a {
 	text-decoration: none
 }
+a:HOVER{
+	text-decoration: none;
+}
 
 /* 顶部 */
 .nav-top {

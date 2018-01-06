@@ -67,8 +67,7 @@
 	</div>
 
 
-	<%-- <script type="text/javascript"
-	src="<%=basePath%>asserts/lib/js/jquery-1.8.0.min.js"></script> --%>
+	
 
 </body>
 </html>
