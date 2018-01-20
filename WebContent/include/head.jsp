@@ -4,6 +4,7 @@
 	href="asserts/lib/css/bootstrap.min.css">   
 <link rel="stylesheet" type="text/css"
 	href="asserts/app/css/head.css" />
+
 <style type="text/css">
 .table th, .table td {
 	text-align: center;
