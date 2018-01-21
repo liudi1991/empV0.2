@@ -4,7 +4,8 @@
 	href="asserts/lib/css/bootstrap.min.css">   
 <link rel="stylesheet" type="text/css"
 	href="asserts/app/css/head.css" />
-
+<link rel="stylesheet" type="text/css" href="asserts/lib/css/ol.css" />
+<link rel="stylesheet" type="text/css" href="asserts/app/css/gis.css" />
 <style type="text/css">
 .table th, .table td {
 	text-align: center;
@@ -45,7 +46,7 @@
 				</div></li>
 			<li><a class="a_list a_list3">地图学习</a>
 				<div class="menu_list">
-					<a href="#">地图1</a> <a href="#">地图2</a> <a
+					<a href="gis.jsp">地图1</a> <a href="#">地图2</a> <a
 						href="#">地图3</a> <a href="#">地图4</a>
 				</div></li>
 		</ul>
