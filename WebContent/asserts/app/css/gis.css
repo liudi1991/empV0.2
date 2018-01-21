@@ -63,6 +63,7 @@
 .ol-custom-overviewmap .ol-overviewmap-box{
 	border: 2px solid red;
 }
+
 /* 按钮样式 */
 #menu{
 	float: left;
@@ -70,6 +71,8 @@
 	bottom:10px;
 	z-index: 2000;
 	right:250px;
+	width: 1400px;
+	left:300px;
 }
 /* 图层控制 */
 .layerControl{
